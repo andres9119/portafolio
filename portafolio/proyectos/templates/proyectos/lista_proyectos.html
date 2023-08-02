@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Lista de Proyectos
+{% endblock %} {% block content %}
+<!-- Contenido  de app proyectos -->
+
+<div class="container-title-project text-center my-4">
+
+    <h2 class="titulo_proyectos mt-5">Proyectos realizados</h2>
+
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+        <!-- bucle for para iterar en los proyectos y mostrar cada uno -->
+        {% for proyecto in proyectos_list %}
+
+        <div class="card-proyectos col-md-3 mb-4">
+            <div class="card-img-wrapper hover-zoom">
+                <img src="{{ proyecto.imagen.url }}" class="card-img-top img-thumbnail card-img img-fluid"
+                    alt="proyecto1" />
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title">{{ proyecto.titulo }}</h5>
+                <p class="card-text">{{ proyecto.descripcion }}</p>
+
+                <div class="card-footer mt-auto">
+                    <a href="{{ proyecto.url }}" class="btn btn-primary w-50">Github</a>
+                </div>
+
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

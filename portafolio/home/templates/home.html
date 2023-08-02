@@ -1,0 +1,93 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Home {% endblock%}
+{% block content %}
+<!-- Contenido  de app proyectos -->
+<header class="bg-secondary text-white text-center py-5">
+  <h1>Andres Ricardo Bateca Jaimes</h1>
+  <p class="parrafo-descripcion w-75 text-center mx-auto">
+    Desarrollador Full Stack Junior de Colombia autodidacta en programación.
+    Tecnólogo en telecomunicaciones y actualmente en el octavo semestre de
+    ingeniería en telecomunicaciones. Apasionado por crear soluciones
+    innovadoras y eficientes utilizando HTML, CSS, Bootstrap, Python, Django y
+    Sqlite. Siempre abierto a nuevos desafíos y aprendizaje constante.
+  </p>
+
+  <div class="d-flex justify-content-center">
+    <img
+      src="{% static '../media/portafolio/images/perfil.jpg' %}"
+      alt="Mi Foto"
+      class="rounded-circle d-none d-sm-block"
+      width="300"
+    />
+  </div>
+</header>
+
+<section class="container my-5">
+  <h2 class="text-center">Habilidades Técnicas</h2>
+
+  <div class="row container-logos">
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/html-5.png"
+        alt="HTML Icon"
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/social.png"
+        alt="CSS Icon"
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/bootstrap.png"
+        alt="Bootstrap Icon"
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/archivo.png"
+        alt="python Icon"
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/git.png"
+        alt="git Icon"
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/github.png"
+        alt="Github Icon"
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/sass.png"
+        alt="sass Icon"
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <img
+        src="../../media/portafolio/icons/django.png"
+        alt="django Icon"
+        class="icon img-fluid"
+      />
+    </div>
+  </div>
+</section>
+{% endblock %}
